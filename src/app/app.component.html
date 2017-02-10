@@ -1,0 +1,12 @@
+<h1>
+  {{title}}
+</h1>
+<p>Platfomr: {{ myPlatform }}</p>
+<p>Architecture: {{ myArch }}</p>
+CUPs:
+<ul>
+  <li *ngFor="let cpu of myCups">{{ cpu.model }}</li>
+</ul>
+Memory: {{ myFreeMem }} of {{ myMem }}
+<p>MD5: {{ myMD5 }}</p>
+<router-outlet></router-outlet>
